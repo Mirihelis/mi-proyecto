@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+/* Estilos Generales*/
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de cabeceras */
+header{
+    background-color: rgba(13, 1, 48);
+    color: #ffff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* main*/
+main{
+    padding: 40px;
+}
+
+#About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    max-width: 25rem;
+    border-radius: 50%;
+    border: 7px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0.5);
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section ul li{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project{
+    background-color: rgba(82, 81, 81);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.project h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+} 
+
+.project p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/*Contacto*/
+
+form label{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form input, 
+textarea{ 
+    display: block; 
+    width: 100%; 
+    padding: 10px;
+    font-size: 15px; 
+    border: 1px solid #080808; 
+    border-radius: 4px; 
+    border-bottom:20px ; 
+} 
+
+form input[type="submit"]{
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    background-color: #333;
+    color: #ffff;
+    padding: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: 0;
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+footer a{
+    font-size: 1.5em;
+}
+
+footer li:hover{
+    transition: 1.5s;
+    transform: scale(1.5);
+}
+
+/* Estilos Responsive*/ 
+@media screen and (max-width:768px){
+    /*Header*/
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    nav ul{
+        margin-top: 10px;
+    }
+    nav li{
+        margin-right: 20px;
+    }
+
+    /* Main*/
+    main{
+        padding: 20px;
+    }
+    img{
+        max-width: 15rem;
+        border-radius: 10%;
+        border: 1px solid #333;
+        box-shadow: 0. 5px 20px rgba;
+    }
+    h2{
+        font-size: 24px;
+    }
+    section ul li{
+        font-size: 18px;
+    }
+    .project h3{
+        font-size: 20px;
+    }
+    .project p{
+        font-size: 14px;
+    }
+    /*Contact*/
+    form label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    form input,
+    textarea{
+        font-size: 14px;
+    }
+    form input[type="submit"]{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /*Footer*/
+    footer{
+        padding: 20px;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer li{
+        margin-right: 10px;
+    }
+}
